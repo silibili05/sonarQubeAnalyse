@@ -2,11 +2,11 @@ package com.axa.ch.its;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "NOTE")
 public class Note {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String owner;
