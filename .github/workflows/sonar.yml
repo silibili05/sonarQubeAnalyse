@@ -44,8 +44,8 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         with:
           args: >
-            -Dsonar.projectKey=DEIN_ORG_DEIN_PROJEKTKEY
-            -Dsonar.organization=DEINE_ORGANISATION
+            -Dsonar.projectKey=silibili05_sonarQubeAnalyse
+            -Dsonar.organization=silibili05
             -Dsonar.java.binaries=target/classes
 
       # Optional: Quality Gate Status
