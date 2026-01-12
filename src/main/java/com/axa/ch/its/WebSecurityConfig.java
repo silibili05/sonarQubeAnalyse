@@ -14,10 +14,7 @@ public class WebSecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        // ABSICHTLICH UNSICHER:
-        // - CSRF deaktiviert
-        // - alle Requests erlaubt
-        // - CORS erlaubt alles (Origin, Header, Methoden)
+
         http
                 .csrf(csrf -> csrf.disable())
                 .cors(cors -> cors.configurationSource(request -> {
